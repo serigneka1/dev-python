@@ -16,7 +16,7 @@ Application Flask pour afficher la température actuelle d’une ville français
 
 1. Cloner le dépôt :
 ```bash
-git clone <URL_DE_TON_REPO>
+git clone https://github.com/serigneka1/dev-python.git
 cd MaMeteo
 ```
 2. Créer un environnement virtuel et installer les dépendances :
@@ -27,6 +27,7 @@ venv\Scripts\activate     # sur Windows
 pip install -r requirements.txt
 ```
 3. Configurer l’API key dans data.py.
+Chercher la clé privée ici https://openweathermap.org/api
 
 4. Utilisation
 - Lancer l’application Flask :
@@ -42,8 +43,4 @@ b- Lancer le conteneur :
 ```bash
 docker run -p 5000:5000 MaMeteo
 ```
-Ouvrir dans le navigateur : http://localhost:5000
-
-
-
-
+Une fois l'App exécutée, ouvrir dans le navigateur : http://localhost:5000
