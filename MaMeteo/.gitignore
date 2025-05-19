@@ -1,0 +1,19 @@
+@"
+# Environnement virtuel
+venv/
+.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+"@ > .gitignore

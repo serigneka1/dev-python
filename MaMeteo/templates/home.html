@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ma météo</title>
+</head>
+<body>
+    <h1>Température actuelle</h1>
+
+    {% if villes %}
+        <ul>
+            {% for ville in villes %}
+                <li>{{ ville.ville }} : {{ ville.temp }} °C</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <form method="POST" action="/">
+        <select name="ma-ville" placeholder="Entrez une ville">
+            <option value="paris">Paris</option>
+            <option value="marseille">Marseille</option>
+            <option value="lyon">Lyon</option>
+            <option value="toulouse">Toulouse</option>
+        </select>
+        <input type="submit" value="Chercher">
+    </form>
+</body>
+</html>
